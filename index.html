@@ -10,7 +10,7 @@
 <body>
     <div class="hero">
         <nav>
-            <img src="portfolio_site_img/logo1.png" class="logo1">
+            <img src="portfolio_site_img/logo1.png" class="logo1" id="logo1">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -25,7 +25,7 @@
             <p>This is my official portfolio to  showcase my all works related 
                 to web <br> developement and UI design  
             </p>
-            <a href="">Download CV</a>
+            <a href="https://drive.google.com/file/d/11kfkR2k3nDDZPUm9ozo2dFtzvhFgjvzb/view?usp=sharing">Download CV</a>
         </div>
 
         <div class="img-box">
@@ -43,15 +43,18 @@
     <script>
 
         var icon =document.getElementById("icon");
+        var logo = document.getElementById("logo1")
 
         icon.onclick=function(){
             document.body.classList.toggle("dark-theme");
 
             if(document.body.classList.contains("dark-theme")){
                 icon.src="portfolio_site_img/sun.png"
+                logo.src="portfolio_site_img/logo2.png"
             }
             else{
                 icon.src="portfolio_site_img/moon.png"
+                logo.src="portfolio_site_img/logo1.png"
             }
         }
 
