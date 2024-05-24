@@ -73,19 +73,16 @@ span{
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-60% );
-    transition: bottom 10s left 10s;
+    transform: translate(-50% );
+  
+    
 }
 
 .img-box:hover .back-img{
     bottom: 40px;
-
+    transition: bottom 2s;
 }
 
-.img-box:hover .mypic-img{
-    left: 54%;
-
-}
 
 .social{
     margin-left: 8%;
