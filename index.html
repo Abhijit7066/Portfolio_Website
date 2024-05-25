@@ -44,10 +44,12 @@
 
         var icon =document.getElementById("icon");
         var logo = document.getElementById("logo1")
-        if(localStorage.getItem("theme")==null){
 
+        if(localStorage.getItem("theme")==null){
+            let localdata=localStorage.getItem("theme","light");
         }
         let localdata=localStorage.getItem("theme");
+    
         if(localdata=="light"){
                 icon.src="portfolio_site_img/moon.png";
                 document.body.classList.remove("dark-theme");
